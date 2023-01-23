@@ -16,7 +16,7 @@ function DisplayBots() {
     const addItemToFavorite = (id) => {
         const item = items.find(item => item.id === id)
         const fav = favoriteItems.find(item => item.id === id)
-        fav ? alert("existing") : setFavoriteItems([...favoriteItems, item])
+        fav ? console.error("The following Bot exist") : setFavoriteItems([...favoriteItems, item])
     }
 
     const removeItemFromFavorites = (id) => {

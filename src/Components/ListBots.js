@@ -2,8 +2,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeartPulse, faShieldHalved, faBolt, faCircleXmark } from '@fortawesome/free-solid-svg-icons'
 
 
-const ListBots = ({ item, handleOnClick }) => {
-    console.log(item.bot_class);
+const Card = ({ item, handleOnClick }) => {
+    // console.log(item.bot_class);
 
     function deletePost() {
         fetch(`http://localhost:8001/bots/${item.id}`, {
@@ -21,7 +21,7 @@ const ListBots = ({ item, handleOnClick }) => {
             <div className="card-deck">
                 <h5 className="card-title ">{item.name} <FontAwesomeIcon icon={item.bot_class} /></h5>
                 <p className="card-text">{item.catchphrase}</p>
-                <a href={`/bots/${item.id}`} className="btn btn-sm text-small btn-primary btn-block m-2">Bots Details</a>
+                {/* <a href={`/bots/${item.id}`} className="btn btn-sm text-small btn-primary btn-block m-2">Bots Details</a> */}
 
                 <div class="card-footer mx-12">
                     <small className="text-muted"> <FontAwesomeIcon icon={faHeartPulse} />{item.health}</small>
@@ -40,4 +40,4 @@ const ListBots = ({ item, handleOnClick }) => {
     )
 }
 
-export default ListBots;
+export default Card;
