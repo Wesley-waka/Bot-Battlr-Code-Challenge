@@ -41,7 +41,6 @@ function DisplayBots() {
                 </div>
             </div>
 
-            {/* <div className="container border"> */}
             <div className="row mx-5 p-0">
                 {items.map((item) => {
                     return (
@@ -53,7 +52,6 @@ function DisplayBots() {
                     );
                 })}
             </div>
-            {/* </div> */}
         </>
 
 
