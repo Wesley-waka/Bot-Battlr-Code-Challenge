@@ -1,5 +1,5 @@
 import './App.css';
-import DisplayBots from './Components/DisplayBots';
+import DisplayBots from './Components/YourBotArmy';
 
 function App() {
   return (
