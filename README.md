@@ -7,6 +7,7 @@
 -If you wish a robot to be in your army
 just click on it and it will display at your army which is a
 blue ribbon to display all robots in your army will pop up at the top of the screen with your Robot
+-Kindly do not list a robots more than twice other wise it will display an error in console "The following Bot exist"
 
 # INFORMATION
 
